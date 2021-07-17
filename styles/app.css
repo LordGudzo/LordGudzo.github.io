@@ -1,0 +1,72 @@
+body {
+   background: rgb(103,251,0);
+   background: radial-gradient(circle, rgba(103,251,0,1) 0%, rgba(153,251,0,1) 37%,
+   rgba(250,251,0,1) 69%, rgba(103,251,0,1) 100%);
+  
+   background-position: center center;
+   background-size: 100% 100%;   
+   font-family: 'Lato', sans-serif;
+}
+.wrapper {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.information {
+  padding-right: 20px;
+}
+.information h1{    
+  font-size: 3em;
+  font-weight: bolder;
+  padding: 5%;
+  text-align: center; 
+}
+.information p {
+  font-size: 2em;
+}
+.contact {  
+  font-size: 2em;
+  padding-top: 30px;
+}
+.contact a{
+  padding-right: 20px;   
+  height: 50px;
+  width: 50px;
+  text-align: center;  
+}
+.contact a i{
+  margin-top: 20px; 
+  color:blue;
+  font-size: 40px; 
+}
+.contact a i:hover{ 
+  color: black;
+  text-align: center;  
+}
+.image{  
+  width: 100%;
+  max-width: 300px;
+  height: auto;  
+  border-radius: 30%;
+}
+.image:hover {
+ animation-name: up;
+ animation-timing-function: linear;
+ animation-duration: 5s;
+ animation-iteration-count: 1;
+ animation-fill-mode: both;
+}
+@keyframes up {
+  from {
+    max-width: 300px;
+    border-radius: 30%;
+  }
+  50% {
+    max-width: 500px;
+    border-radius: 15%;
+  }
+  to {
+    max-width: 700px;
+    border-radius: 0;
+  }
+}
